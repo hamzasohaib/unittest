@@ -1,6 +1,8 @@
 pipeline {
   agent any
-
+environment { 
+     PATH='/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/root/anttool/bin'
+    }
   stages {
     stage('Compile') {
        steps {
